@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "直播获取",
+  "description": "Demonstrates the webRequest.onAuthRequired listener to detect an authentication request and log the user into the designated site.",
+  "version": "1.0",
+  "action": {
+    "default_icon": {              
+      "16": "popup.png",    
+      "24": "popup.png",   
+      "32": "popup.png"    
+    },
+    "default_title": "Click Me",   
+    "default_popup": "popup.html"  
+  },
+  "permissions": ["storage", "scripting", "webRequest"],
+  "host_permissions": ["*://*.jinritemai.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  }
+}

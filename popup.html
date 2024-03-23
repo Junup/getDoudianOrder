@@ -1,0 +1,47 @@
+<html>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'sha256-2Ia4+bBW1uZhLeL2I2HNKGe5n4cd72wP/7gZUlpYndg='">
+  <style>
+    *{
+      padding:0;
+      margin:0;
+    }
+    .table-style{
+      margin: 0 auto;
+      margin-bottom: 20px;
+      width: 90%;
+      border:1px solid #ddd;
+    }
+    .table-style tr{
+      border-bottom: 1px solid #ddd;
+    }
+    body{
+      width:300px;
+      height: 150px;
+    }
+  </style>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      console.log("RISE",'popup')
+      var button = document.getElementById('myButton');
+      button.addEventListener('click', function() {
+        // 处理点击事件
+        alert('Button clicked!');
+      });
+    });
+  </script>
+  <body>
+    <table>
+      <thead>
+        <th>【抖音】时光里潮玩工作室</th>
+      </thead>
+   
+    </table>
+    <div id="tbody">
+ 
+    </div>
+    <button id="myButton">一键打印所有内容</button>
+    <script src="js/main.js"></script>
+  </body>
+</html>
